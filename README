@@ -1,0 +1,43 @@
+kobi_kobi1234
+316213990
+
+the project is based on DanoGameLab and so are my classes.
+Also, i used the API instructions to assist me design all of the classes.
+
+There are three main types of classes:
+1. Game Strategies - contains all of the strategies that are required in the game.
+It also contains the decorator that helped to decorate all of the strategies all along the game.
+Each strategy has it's own way of actions, and every one od them, except the double
+strategy is connected to a class that represents an object.
+
+The extra strategy that i chose is the game time changing -
+i added a class of this strategy and connected it to another class
+that represents the object which is a clock.
+in the clock object i managed between 2 types of clocks -
+red one to speed up the time.
+green one to slow down the time.
+
+Algorithms -
+1. alotStudyTime - an algorithm that calculates the maximum amount of tasks in given time slots.
+this is a grid algorithm that tries to get the maximum number of tasks in limited time.
+as I see it, first we need to sort the two arrays with nlogn run time and then to choose
+the minimal tasks first.
+run time - O(n*m) while n is the length of the tasks array and m is the length of the slots array
+
+2. minLeap - algorithm that calculates the minimum number of jumps to the end of the leaves.
+this is a grid algorithm that tries to fing the minimal jumps from the start to the end point.
+it calculates the maximum between the sums of each jump + the next leaf.
+run time - O(n^2) - while loop and for loop when n is the length of the leaves array
+
+3. bucketWalk - an algorithm that calculates the maximum ways to fill water with one or two buckets.
+this is a dynamic algorithm that counts all of the possibilities to fill a trough.
+runtime - O(nlogn) because of the recursive actions
+
+4. numTrees - an algorithm that calculates the maximum number of options to a BST with unique numbers
+from 1 to n.
+this is not a recursive but a dynamic algorithm that looks for all of the legal, possible BST trees
+using for loops instead of recursion. It is separated into cases that when combining them,
+count the maximum amount of possible trees variations.
+run time - O(n^2) because of two for loops, while n is the input number that represents the
+number of leaves in the tree
+
